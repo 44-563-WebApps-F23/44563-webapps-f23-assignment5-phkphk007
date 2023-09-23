@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <style>
+      .img-fluid {
+        width: 300px;
+        height: 300px;
+      }
+      .img-thumbnail {
+        width: 300px;
+        height: 300px;
+      }
+    </style>
     <title>Bootstrap Starter</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -54,18 +64,83 @@
       If you choose col-sm, then the columns will become horizontal when the
       width is >= 768px
     </p>
-    <h4>For reference: see below::</h4>
-    <p>
-      col-xs : For Extra small devices(screen width less than 576 px ) <br />
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md">
+          <img src="paris.jpg" class="img-fluid" alt="an image of paris" />
+        </div>
+        <div class="col-md">
+          <img src="haridwar.jpg" class="img-fluid" alt="image of haridwar" />
+        </div>
+        <div class="col-md">
+          <img src="Muscat.jpg" class="img-fluid" alt="image of Muscat" />
+        </div>
+      </div>
+    </div>
 
-      col-sm :For small devices(screen width greater than or equal to 576 px)
-      <br />
-      col-md : For medium devices(screen width greater than or equal to 768 px)
-      <br />
-      col-lg : For large devices(screen width greater than or equal to 992 px)
-      <br />
-      col-xl : For extra large devices(screen width greater than or equal to
-      1200 px)
-    </p>
+    <h3>Image thumnails</h3>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md">
+          <img src="paris.jpg" class="img-thumbnail" alt="an image of paris" />
+        </div>
+        <div class="col-md">
+          <img
+            src="haridwar.jpg"
+            class="img-thumbnail"
+            alt="image of haridwar"
+          />
+        </div>
+        <div class="col-md">
+          <img src="Muscat.jpg" class="img-thumbnail" alt="image of Muscat" />
+        </div>
+      </div>
+    </div>
+    <table class="table table-primary table-bordered table-hover table-compact">
+      <thead>
+        <tr>
+          <th class="table-secondary">Letter</th>
+          <th class="table-secondary">City</th>
+          <th class="table-secondary">River</th>
+          <th class="table-secondary">Tree</th>
+        </tr>
+      </thead scope="col">
+      <tr class="table-danger table-bordered">
+        <td>P</td>
+        <td>Paris</td>
+        <td>Peace River</td>
+        <td>palm tree</td>
+      </tr>
+      <tr class="table-striped">
+        <td>H</td>
+        <td>Haridwar</td>
+        <td>Hudson</td>
+        <td>Hackberry Trees</td>
+      </tr>
+      <tr class="table-success">
+        <td>E</td>
+        <td>England</td>
+        <td>Econfina River</td>
+        <td>Eucalyptus Trees</td>
+      </tr>
+      <tr class="table-warning">
+        <td>M</td>
+        <td>Muscat</td>
+        <td>Mohawk River</td>
+        <td>Magnolia Trees</td>
+      </tr>
+      <tr class="table-light">
+        <td>N</td>
+        <td>Nairobi</td>
+        <td>Nabesna River</td>
+        <td>Namboca Trees</td>
+      </tr>
+      <tr class="table-striped">
+        <td>T</td>
+        <td>Tennessi</td>
+        <td>Teal River</td>
+        <td>Tiger woods</td>
+      </tr>
+    </table>
   </body>
 </html>
